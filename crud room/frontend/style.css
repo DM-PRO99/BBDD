@@ -1,0 +1,16 @@
+:root{ --bg:#f4f6f8; --card:#fff; --accent:#0b74de; --muted:#666;}
+*{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+body{margin:0;padding:24px;background:var(--bg);color:#111;}
+header{margin-bottom:12px;}
+#app{display:flex;flex-direction:column;gap:12px;align-items:flex-start;}
+nav{display:flex;gap:8px;margin-bottom:8px;}
+nav a{padding:8px 12px;background:var(--card);border-radius:6px;text-decoration:none;color:var(--accent);border:1px solid rgba(11,116,222,0.12);}
+.card{background:var(--card);padding:16px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.login-card{max-width:360px;margin:auto;}
+label{display:block;margin-top:8px;font-size:14px;color:var(--muted);}
+input,button,textarea{padding:8px;border-radius:6px;border:1px solid #ddd;margin-top:6px;width:100%;}
+button{background:var(--accent);color:#fff;border:none;cursor:pointer;padding:10px 12px;}
+.error{color:#b00020;}
+#container-users > div{background:#fff;padding:12px;border-radius:6px;margin-bottom:8px;box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+#rooms-container > div{background:#fff;padding:12px;border-radius:6px;margin-top:8px;}
+@media(max-width:800px){ body{padding:12px;} nav{flex-wrap:wrap;} }
