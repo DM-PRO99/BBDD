@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt - Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Encrypt</h1>
+            <p>Iniciar Sesión</p>
+        </div>
+
+        <!-- Vista de Login -->
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #333;">Login</h2>
+            <div id="loginMessage"></div>
+            <form id="login">
+                <div class="form-group">
+                    <label for="loginName">Nombre</label>
+                    <input type="text" id="loginName" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Contraseña</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn">Iniciar Sesión</button>
+            </form>
+            <div class="toggle-form">
+                <a href="./register.html">¿No tienes cuenta? Regístrate</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

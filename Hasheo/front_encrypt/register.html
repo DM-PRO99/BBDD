@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt - Registro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Encrypt</h1>
+            <p>Crear Cuenta</p>
+        </div>
+
+        <!-- Vista de Registro -->
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #333;">Registro</h2>
+            <div id="registerMessage"></div>
+            <form id="register">
+                <div class="form-group">
+                    <label for="registerName">Nombre</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Contraseña</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+            <div class="toggle-form">
+                <a href="./index.html">¿Ya tienes cuenta? Inicia sesión</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./register.js"></script>
+</body>
+</html> 
