@@ -1,0 +1,155 @@
+{
+  "info": {
+    "name": "PD Diego - API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Client",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"identification\":\"123\",\"name\":\"Test\" }"
+        },
+        "url": {
+          "raw": "http://localhost:3000/clients",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "clients"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Clients",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/clients",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "clients"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Client",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/clients/1",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "clients",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Client",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"identification\":\"123\",\"name\":\"Updated\" }"
+        },
+        "url": {
+          "raw": "http://localhost:3000/clients/1",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "clients",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Client",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:3000/clients/1",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "clients",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Report - total paid per client",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/reports/total_paid_per_client",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "reports",
+            "total_paid_per_client"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Report - pending invoices",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/reports/pending_invoices",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "reports",
+            "pending_invoices"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Report - transactions by platform",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/reports/transactions_by_platform/Nequi",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "reports",
+            "transactions_by_platform",
+            "Nequi"
+          ]
+        }
+      }
+    }
+  ]
+}

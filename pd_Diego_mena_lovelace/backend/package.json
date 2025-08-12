@@ -1,0 +1,17 @@
+{
+  "name": "pd_diego_mena_lovelace_backend",
+  "version": "1.0.0",
+  "description": "Backend API for Clients CRUD",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0",
+    "dotenv": "^16.0.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5"
+  }
+}
